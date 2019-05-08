@@ -5,6 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-    É tetraaaa!
+    {% for post in posts %}
+    <div>
+        {{ post.body_text }}
+    </div>
+    {% endfor %}
 </body>
 </html>

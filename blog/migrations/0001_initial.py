@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('headline', models.CharField(max_length=255)),
                 ('body_text', models.TextField()),
-                ('pub_date', models.DateField()),
+                ('pub_date', models.DateField(auto_now_add=True)),
                 ('mod_date', models.DateField()),
                 ('n_comments', models.IntegerField()),
                 ('n_pingbacks', models.IntegerField()),
